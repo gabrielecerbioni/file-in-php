@@ -50,10 +50,10 @@ if ($cognome !== "" || $nome !== "" || $materia !== "") {
 <h2>Calcola la media dei voti</h2>
 
 <form method="get" action="">
-    <label>Cognome: <input type="text" name="cognome" value="<?= htmlspecialchars($cognome) ?>"></label><br><br>
-    <label>Nome: <input type="text" name="nome" value="<?= htmlspecialchars($nome) ?>"></label><br><br>
-    <label>Classe: <input type="text" name="classe" value="<?= htmlspecialchars($classe) ?>"></label><br><br>
-    <label>Materia: <input type="text" name="materia" value="<?= htmlspecialchars($materia) ?>"></label><br><br>
+    <label>Cognome: <input type="text" name="cognome" value="<?= $cognome ?>"></label><br><br>
+    <label>Nome: <input type="text" name="nome" value="<?= $nome ?>"></label><br><br>
+    <label>Classe: <input type="text" name="classe" value="<?= $classe ?>"></label><br><br>
+    <label>Materia: <input type="text" name="materia" value="<?= $materia ?>"></label><br><br>
     <button type="submit" class="btn btn-ready">Calcola media</button>
 </form>
 
@@ -62,3 +62,4 @@ if ($cognome !== "" || $nome !== "" || $materia !== "") {
 <?php endif; ?>
 </body>
 </html>
+
